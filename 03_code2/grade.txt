@@ -1,4 +1,4 @@
-Grading at Tue May 26 16:19:27 UTC 2020
+Grading at Tue May 26 16:24:26 UTC 2020
 Checking code2.c for legal syntax
 Checking for int printTriangle (int size)
 Found on line 4, column 1 
@@ -14,7 +14,7 @@ Here is a triangle with height 4
 ***
 ****
 That triangle had 10 total stars
-here is a triangle with hieght 7
+Here is a triangle with hieght 7
 *
 **
 ***
