@@ -1,24 +1,24 @@
 
 int printTriangle(int size) {
   //start with starCount being 0
-  int starcount=0;
-  for(int i=0;i<size;i++){
+  int starCount=0;
   //count from 0 (inclusive) to size (exclusive), for each number i that you count
-    for(int j=0;j<=i;j++){
+    for(int i=0; i<size; i++){
      //count from 0 (inclusive) to i (inclusive), for each number j that you count
-      printf("*");
+      for(int j=0; j<=i; j++){
+       
         //print a "*"
-      starcount++;
+	printf("*");
         //increment starCount
-    }
+	starCount++;
      //when you finish counting on j, 
-    printf("\n");
+      }
      //print a newline ("\n")
-  }
+      printf("\n");
   //when you finish counting on i, 
-  return starcount;
+    }
   //your answer is starCount
-
+    return starCount;
 }
 
 
