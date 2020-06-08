@@ -1,0 +1,9 @@
+Grading at Mon Jun  8 10:12:05 UTC 2020
+Attempting to compile retirement.c
+retirement.c:26:6: error: return type of ‘main’ is not ‘int’ [-Werror=main]
+ void main(){
+      ^
+cc1: all warnings being treated as errors
+The code did not compile!
+
+Overall Grade: F
