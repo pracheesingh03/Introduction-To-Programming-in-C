@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef _retire_info
+{
+  int months;
+  double contribution;
+  double rate_of_return;
+}
+  retire_info;
+
+void retirement(int startAge, double initial, retire_info working, retire_info retired)
+{
+}
+
+void main(){
+  int startAge= 327;
+  double savings= 21345;
+  working.months= 489
+  working.contribution= 1000;
+  working.rate_of_return= (0.045/12);
+  retired.months= 384;
+  retired.contribution= -4000;
+  retired.rate_of_return= (0.01/12);
+  return 0;
+}
