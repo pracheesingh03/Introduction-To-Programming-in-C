@@ -1,0 +1,36 @@
+aaaaa aaaaa
+aaaaa bbbbb
+aaaaa abbbb
+aaaaa aabbb
+aaaaa aaabb
+aaaaa aaaab
+abbbb bbbbb
+aabbb bbbbb
+aaabb bbbbb
+aaaab bbbbb
+aabcc bbbbb
+aabcd bbbbb
+abcde bbbbb
+aaaaa bcdef
+aaaaa bcdde
+aaaaa bcddd
+12344 11122
+abcde fghij
+abcdef hhhhh
+hhhhh jhufij
+ajshdg fhgjeu
+a a
+aa bb
+ac bb
+aaa bba
+abc bbb
+a
+ a
+abcd  aabbb
+0aaaa 00000
+hhhhh kkkk
+gggg iiii
+ gggg jdhfg
+aghhh     k
+      jhhjj
+aaaaa aaaaa aaaaa
