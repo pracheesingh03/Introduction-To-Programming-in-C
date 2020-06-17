@@ -1,16 +1,9 @@
-Grading at Wed Jun 17 16:17:37 UTC 2020
+Grading at Wed Jun 17 16:20:00 UTC 2020
 Compiling cards.c
-cards.c: In function ‘value_letter’:
-cards.c:32:8: error: unused variable ‘x’ [-Werror=unused-variable]
-   char x;
-        ^
 cards.c: In function ‘suit_letter’:
-cards.c:51:3: error: enumeration value ‘NUM_SUITS’ not handled in switch [-Werror=switch]
-   switch(c.suit)
-   ^
-cards.c:50:8: error: unused variable ‘x’ [-Werror=unused-variable]
-   char x;
-        ^
+cards.c:56:28: error: return makes integer from pointer without a cast [-Werror=int-conversion]
+     case NUM_SUITS: return "Invalid card"; break;
+                            ^
 cc1: all warnings being treated as errors
 Could not compile your card.c!
 
