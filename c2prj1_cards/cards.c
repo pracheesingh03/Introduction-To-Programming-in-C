@@ -29,7 +29,7 @@ const char * ranking_to_string(hand_ranking_t r) {
 }
 
 char value_letter(card_t c) {
-  char x;
+  
   if(c.value>= 2 && c.value<=9)
     return(c.value+ '0');
   else
@@ -40,20 +40,20 @@ char value_letter(card_t c) {
       case VALUE_QUEEN: return 'Q'; break;
       case VALUE_KING: return 'K'; break;
       case VALUE_ACE: return 'A'; break;
-      case NUM_SUITS: return 4; break;
       }
   return 'x';
 }
 
 
 char suit_letter(card_t c) {
-  char x;
+  
   switch(c.suit)
     {
     case SPADES: return 's'; break;
     case DIAMONDS: return 'd'; break;
     case HEARTS: return 'h'; break;
     case CLUBS: return 'c'; break;
+    case NUM_SUITS: return "Invalid card"; break;
     }
   return 'x';
   
