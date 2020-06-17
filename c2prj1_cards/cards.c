@@ -53,7 +53,7 @@ char suit_letter(card_t c) {
     case DIAMONDS: return 'd'; break;
     case HEARTS: return 'h'; break;
     case CLUBS: return 'c'; break;
-    case NUM_SUITS: return "Invalid card"; break;
+    case NUM_SUITS: return '0'+ 4; break;
     }
   return 'x';
   
