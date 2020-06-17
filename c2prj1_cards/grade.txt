@@ -1,14 +1,14 @@
-Grading at Wed Jun 17 16:08:42 UTC 2020
+Grading at Wed Jun 17 16:17:37 UTC 2020
 Compiling cards.c
 cards.c: In function ‘value_letter’:
-cards.c:32:8: error: variable ‘x’ set but not used [-Werror=unused-but-set-variable]
+cards.c:32:8: error: unused variable ‘x’ [-Werror=unused-variable]
    char x;
         ^
 cards.c: In function ‘suit_letter’:
-cards.c:50:3: error: enumeration value ‘NUM_SUITS’ not handled in switch [-Werror=switch]
+cards.c:51:3: error: enumeration value ‘NUM_SUITS’ not handled in switch [-Werror=switch]
    switch(c.suit)
    ^
-cards.c:49:8: error: variable ‘x’ set but not used [-Werror=unused-but-set-variable]
+cards.c:50:8: error: unused variable ‘x’ [-Werror=unused-variable]
    char x;
         ^
 cc1: all warnings being treated as errors
