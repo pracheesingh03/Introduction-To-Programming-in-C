@@ -1,0 +1,21 @@
+Grading at Wed Jun 17 16:02:21 UTC 2020
+Compiling cards.c
+cards.c: In function ‘ranking_to_string’:
+cards.c:16:3: error: enumeration value ‘PAIR’ not handled in switch [-Werror=switch]
+   switch(r)
+   ^
+cards.c: In function ‘value_letter’:
+cards.c:31:8: error: variable ‘x’ set but not used [-Werror=unused-but-set-variable]
+   char x;
+        ^
+cards.c: In function ‘suit_letter’:
+cards.c:49:3: error: enumeration value ‘NUM_SUITS’ not handled in switch [-Werror=switch]
+   switch(c.suit)
+   ^
+cards.c:48:8: error: variable ‘x’ set but not used [-Werror=unused-but-set-variable]
+   char x;
+        ^
+cc1: all warnings being treated as errors
+Could not compile your card.c!
+
+Overall Grade: FAILED
