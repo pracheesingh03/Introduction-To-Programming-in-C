@@ -1,4 +1,4 @@
-Grading at Fri Jun 19 11:06:38 UTC 2020
+Grading at Fri Jun 19 11:19:25 UTC 2020
 Attempting to compile test.c
 The code did not compile
 Your file matched the expected output
