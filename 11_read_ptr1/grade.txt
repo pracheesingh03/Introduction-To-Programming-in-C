@@ -1,7 +1,8 @@
-Grading at Fri Jun 19 12:09:15 UTC 2020
+Grading at Fri Jun 19 12:13:06 UTC 2020
 Attempting to compile test.c
-The code did not compile
+gcc -o test test.c
+compiled
 Your file matched the expected output
 Your output matched what we expected
 
-Overall Grade: FAILED
+Overall Grade: PASSED
