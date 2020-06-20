@@ -1,0 +1,8 @@
+Grading at Sat Jun 20 12:21:41 UTC 2020
+Attempting to compile test.c
+gcc -o test -std=gnu99 -pedantic -Wall -Werror test.c
+compiled
+Your file matched the expected output
+Your output matched what we expected
+
+Overall Grade: PASSED
