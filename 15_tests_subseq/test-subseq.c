@@ -5,7 +5,7 @@ size_t maxSeq(int * array, size_t n);
 
 
 int main() {
-  int array1[] = {1, 2, 3, 2};
+  int array1[] = {3, 6, 7, 2};
   int array2[] = {2, -3, 5, 6, 8};
   int array3[] = {5};
   int array4[] = {2, 4, 3, 6, 10, 15, -1, 7, 8, 2};
@@ -16,11 +16,11 @@ int main() {
     exit(EXIT_FAILURE);
   }
   if (maxSeq(array1, 0)) {
-    printf("Failed on 1,2,3,2 for NULL\n");
+    printf("Failed on 3, 6, 7, 2\n");
     exit(EXIT_FAILURE);
   }
   if (maxSeq(array1, 4) != 3) {
-    printf("Failed on 1,2,3,2\n");
+    printf("Failed on 3, 6, 7, 2\n");
     exit(EXIT_FAILURE);
   }
   if (maxSeq(array2, 5) != 4) {
