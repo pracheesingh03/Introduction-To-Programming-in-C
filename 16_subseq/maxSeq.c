@@ -11,7 +11,7 @@ size_t maxSeq(int * array, size_t n){
  else if(array[i]>array[i+1])
 	{
 	max= t;
-	t=0;
+	t=1;
 	}
     }
   return max;
