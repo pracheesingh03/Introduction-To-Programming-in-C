@@ -8,11 +8,11 @@ size_t maxSeq(int * array, size_t n){
     {
       if(array[i]<array[i+1])
 	t++;
- else if(array[i]>array[i+1])
-	{
-	max= t;
+      else
 	t=1;
-	}
+      if (t> max)
+	max=t;
+	
     }
   return max;
 }
