@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 size_t maxSeq(int * array, size_t n){
-  size_t t=1; size_t max=1;
+ int t=1; int  max=1;
   if(n==0) return 0;
  
   for(int i=0; i<n; i++)
