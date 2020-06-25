@@ -3,8 +3,9 @@
 #include <string.h>
 
 void reverse(char * str) {
-  char arr[1000];
+  char arr[100000];
   char *a= arr; int n=0;
+ 
   while(*str!='\0')
     {
       *a= *str;
