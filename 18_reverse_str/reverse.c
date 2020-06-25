@@ -3,7 +3,8 @@
 #include <string.h>
 
 void reverse(char * str) {
-  char arr[100000];
+  if(str==NULL) return;
+  char arr[1000];
   char *a= arr; int n=0;
  
   while(*str!='\0')
