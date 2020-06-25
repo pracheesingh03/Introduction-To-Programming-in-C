@@ -12,6 +12,7 @@ void reverse(char * str) {
       a++;
       n++;
     }
+  *a='\0';
   a-=n;
   str--;
   while(*a!='\0')
