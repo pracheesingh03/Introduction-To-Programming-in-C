@@ -8,9 +8,10 @@ void rotate(char matrix[10][10])
 	  new[i][j]= matrix[j][i];
 	}
     }
-  int k=0;
+
   for(int i=0; i<10; i++)
     {
+      int k=0;
       for(int j=9; j>=0; j--)
 	{
 	  matrix[i][k]= new[i][j];
