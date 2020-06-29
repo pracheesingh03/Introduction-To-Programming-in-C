@@ -20,8 +20,8 @@ int main()
     exit(EXIT_FAILURE);
 
   unsigned x4=3;
-  unsigned y4=3;
-  if(power(x4,y4)!=27)
+  unsigned y4=2;
+  if(power(x4,y4)!=9)
     exit(EXIT_FAILURE);
 
   unsigned x5=-2;
@@ -41,8 +41,16 @@ int main()
 
   unsigned x8=2;
   unsigned y8=-2;
-  if(power(x8,y8)!=0.25)
+  if(power(x8,y8)!=0)
     exit(EXIT_FAILURE);
 
+  unsigned x9=-2;
+  unsigned y9=-2;
+  if(power(x9,y9)!=0)
+    exit(EXIT_FAILURE);
+  unsigned ans;
+  ans = power(10,5);
+  if (ans !=100000)return EXIT_FAILURE;
+		     
   exit(EXIT_SUCCESS);
 }
