@@ -1,4 +1,4 @@
-Grading at Mon Jun 29 17:28:48 UTC 2020
+Grading at Mon Jun 29 17:46:47 UTC 2020
 **Testing broken implementation 10 **
 -------------------------------------
 
@@ -46,6 +46,8 @@ Grading at Mon Jun 29 17:28:48 UTC 2020
 **Testing correct implementation **
 -------------------------------------
 
-Your test program falsely failed the correct implementation!
 
-Overall Grade: FAILED
+All tests were ok.
+
+
+Overall Grade: PASSED
