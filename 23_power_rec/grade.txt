@@ -1,7 +1,7 @@
-Grading at Mon Jun 29 18:06:55 UTC 2020
+Grading at Mon Jun 29 18:10:56 UTC 2020
 Attempting to compile power.c
 power.c: In function ‘power’:
-power.c:12:1: error: control reaches end of non-void function [-Werror=return-type]
+power.c:14:1: error: control reaches end of non-void function [-Werror=return-type]
  }
  ^
 cc1: all warnings being treated as errors
