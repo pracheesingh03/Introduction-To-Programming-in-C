@@ -1,6 +1,3 @@
-#include<stdlib.h>
-#include<stdio.h>
-
 void rotate(char matrix[10][10])
 {
   char new[10][10];
