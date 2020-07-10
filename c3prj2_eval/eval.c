@@ -39,11 +39,10 @@ suit_t flush_suit(deck_t * hand) {
 }
 
 unsigned get_largest_element(unsigned * arr, size_t n) {
-  size_t max= *arr;
-  for (size_t i=0; i< n; i++)
-    {
-      if(*(arr+i)> max) max= *(arr+i);
-    }
+  unsigned max= arr[0];
+  for (size_t i=1 ; i<n ;i++ ){
+    if (arr[i] > max) max=arr[i];
+  }
   return max;
 }
 
