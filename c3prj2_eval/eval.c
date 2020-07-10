@@ -21,23 +21,31 @@ int card_ptr_comp(const void * vp1, const void * vp2) {
 }
 
 suit_t flush_suit(deck_t * hand) {
-  card_t ** card = (*hand).cards;
-  size_t s,h,c,d;
+  card_t** card= hand -> cards;
+  card_t card1;
+  card1 = **(card +0);
+  int s,h,d,c;
   s=h=d=c=0;
-  for ( size_t i=0; i< (*hand).n_cards; i++)
-    {
-      if ((**(card+i)).suit== SPADES) s++;
-      else if ((**(card+i)).suit== CLUBS) c++;
-      else if ((**(card+i)).suit== DIAMONDS) d++;
-      else if ((**(card+i)).suit== HEARTS) h++;
-    }
-  if (s>=5) return SPADES;
-  else if (d>=5) return DIAMONDS;
-  else if (c>=5) return CLUBS;
-  else if (h>=5) return HEARTS;
-  else return NUM_SUITS;
-}
 
+
+  for (size_t i=0 ;i< (hand ->n_cards);i++){
+    card1 = **(card +i);
+    switch(card1.suit){
+    case SPADES : {s++;  break;}
+    case HEARTS : { h++;  break;}
+    case DIAMONDS :{ d++ ;  break;}
+    case CLUBS :{c++ ; break;}
+    case NUM_SUITS: break;
+
+    }
+  }
+
+  if (s >= 5) return SPADES;
+  if (h >= 5) return HEARTS;
+  if (d >= 5) return DIAMONDS;
+  if (c >= 5) return CLUBS;
+  return NUM_SUITS;
+}
 unsigned get_largest_element(unsigned * arr, size_t n) {
   unsigned max= arr[0];
   for (size_t i=1 ; i<n ;i++ ){
