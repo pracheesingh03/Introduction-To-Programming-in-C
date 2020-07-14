@@ -5,22 +5,22 @@
 void decrypt(FILE *f)
 {
   int c;
-  int f;
+  int f1;
   char ans;
   int finalf=0;
   for(char a='a'; a<='z'; a++)
     {
-      f=0;
+      f1=0;
   while((c=fgets(f)) != EOF)
     {
       if(isalpha(c))
 	{
-	  if(c==a) f++;
+	  if(c==a) f1++;
 	}
     }
-  if(finalf<f)
+  if(finalf<f1)
     {
-      finalf=f;
+      finalf=f1;
       ans=tolower(a);
     }
     }
