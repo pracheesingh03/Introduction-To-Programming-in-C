@@ -31,6 +31,10 @@ void decrypt(FILE *f)
       key= key*(-1);
       key = 26- key;
     }
+  if (key>26)
+    {
+      fprintf(stderr, "Invalid key"); return EXIT_FAILURE;
+    }
   printf("%d", key);
   
 }
@@ -38,7 +42,7 @@ int main(int argc, char ** argv)
 {
   if(argc !=1)
     {
-      fprintf("Usage: input File name");
+      fprintf(stderr, "Usage: input File name");
       return EXIT_FAILURE;
     }
   FILE *f = fopen(argv[0], "r");
