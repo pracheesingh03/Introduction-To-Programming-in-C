@@ -41,11 +41,11 @@ int main(int argc, char ** argv)
       fprintf("Usage: input File name");
       return EXIT_FAILURE;
     }
-  FILE *f = fopen(argv[], "r");
+  FILE *f = fopen(argv[0], "r");
   if(f==NULL)
     {
       perror("could not open file");
-      return EXIT FAILURE;
+      return EXIT_FAILURE;
     }
   decrypt(f);
   if(fclose(f)!=0)
