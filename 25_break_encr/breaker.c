@@ -11,7 +11,7 @@ void decrypt(FILE *f)
   for(char a='a'; a<='z'; a++)
     {
       f1=0;
-  while((c=fgets(f)) != EOF)
+  while((c=fgetc(f)) != EOF)
     {
       if(isalpha(c))
 	{
