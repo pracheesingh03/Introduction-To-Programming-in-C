@@ -31,12 +31,7 @@ void decrypt(FILE *f)
       key= key*(-1);
       key = 26- key;
     }
-  if (key>26)
-    {
-      fprintf(stderr, "Invalid key"); return EXIT_FAILURE;
-    }
-  printf("%d", key);
-  
+  return key;
 }
 int main(int argc, char ** argv)
 {
@@ -51,7 +46,13 @@ int main(int argc, char ** argv)
       perror("could not open file");
       return EXIT_FAILURE;
     }
-  decrypt(f);
+  int key=  decrypt(f);
+  if(key>26)
+    {
+      fprintf(stderr, "Invalid key");
+      return EXIT_FAILURE;
+    }
+  printf("%d", key);
   if(fclose(f)!=0)
     {
       perror("Failed to close file");
