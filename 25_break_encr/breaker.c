@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include<ctype.h>
 
-void decrypt(FILE *f)
+int decrypt(FILE *f)
 {
   int c;
   int f1;
