@@ -6,7 +6,7 @@ void decrypt(FILE *f)
 {
   int c;
   int f1;
-  char ans;
+  int ans;
   int finalf=0;
   for(char a='a'; a<='z'; a++)
     {
