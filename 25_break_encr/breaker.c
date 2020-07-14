@@ -35,12 +35,12 @@ int decrypt(FILE *f)
 }
 int main(int argc, char ** argv)
 {
-  if(argc !=1)
+  if(argc !=2)
     {
       fprintf(stderr, "Usage: input File name");
       return EXIT_FAILURE;
     }
-  FILE *f = fopen(argv[0], "r");
+  FILE *f = fopen(argv[1], "r");
   if(f==NULL)
     {
       perror("could not open file");
