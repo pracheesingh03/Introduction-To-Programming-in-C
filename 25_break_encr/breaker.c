@@ -24,9 +24,18 @@ int decrypt(FILE *f)
       ans=tolower(a);
     }
     }
+  if(finalf==0)
+    {
+      fprintf(stderr, "no alphabets");
+      return EXIT_FAILURE;
+    }
   int key;
   key= ans - 'e';
- 
+  if(key<0)
+    {
+      key= key*(-1);
+      key = 26- key;
+    }
   
   return key;
 }
