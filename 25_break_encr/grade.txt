@@ -1,15 +1,7 @@
-Grading at Tue Jul 14 18:49:08 UTC 2020
+Grading at Wed Jul 15 11:10:50 UTC 2020
 Attempting to compile breaker.c 
 gcc -o breaker -std=gnu99 -Wall -Werror breaker.c
-testcase1 passed
-#################################################
-testcase2:
-testcase2 failed
-#################################################
-testcase3:
-testcase3 passed
-#################################################
-testcase4:
-testcase4 failed
+Makefile:2: recipe for target 'breaker' failed
+The code did not compile!
 
 Overall Grade: F
