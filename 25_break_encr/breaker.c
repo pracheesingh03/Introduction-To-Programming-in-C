@@ -30,13 +30,18 @@ int decrypt(FILE *f)
       return EXIT_FAILURE;
     }
   int key;
+  /*
   key= ans - 'e';
   if(key<0)
     {
       key= key*(-1);
       key = 26- key;
     }
-  
+  */
+  key = ans- 'a';
+  if (key>0)
+      key = (key+22)%26;
+  else key = key + (((-key)+22)%26);
   return key;
 }
 int main(int argc, char ** argv)
