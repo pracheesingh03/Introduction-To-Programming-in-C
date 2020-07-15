@@ -26,11 +26,7 @@ int decrypt(FILE *f)
     }
   int key;
   key= ans - 'e';
-  if(key<=0)
-    {
-      key= key*(-1);
-      key = 26- key;
-    }
+ 
   
   return key;
 }
