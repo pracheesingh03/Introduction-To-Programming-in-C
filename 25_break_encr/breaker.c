@@ -15,13 +15,14 @@ int decrypt(FILE *f)
     {
       if(isalpha(c))
 	{
+	  c = tolower(c);
 	  if(c==a) f1++;
 	}
     }
   if(finalf<f1)
     {
       finalf=f1;
-      ans=tolower(a);
+      ans= a;
     }
     }
   if(finalf==0)
@@ -59,7 +60,7 @@ int main(int argc, char ** argv)
       return EXIT_FAILURE;
     }
   int key=  decrypt(f);
-  if(key>26)
+  if(key>=26)
     {
       fprintf(stderr, "Invalid key");
       return EXIT_FAILURE;
