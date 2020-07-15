@@ -25,12 +25,13 @@ int decrypt(FILE *f)
     }
     }
   int key;
-  key = ans- 'e';
+  key = "e"- ans;
   if(key<0)
     {
       key= key*(-1);
       key = 26- key;
     }
+  else key = key * (-1);
   return key;
 }
 int main(int argc, char ** argv)
