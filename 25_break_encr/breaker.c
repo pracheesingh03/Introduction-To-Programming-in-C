@@ -41,7 +41,7 @@ int decrypt(FILE *f)
   key = ans- 'a';
   if (key>0)
       key = (key+22)%26;
-  else key = key + (((-key)+22)%26);
+  else key= 26+key;
   return key;
 }
 int main(int argc, char ** argv)
