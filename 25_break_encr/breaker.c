@@ -25,7 +25,7 @@ int decrypt(FILE *f)
     }
     }
   int key;
-  key = 'e'- ans;
+  key= ans - 'e';
   if(key<0)
     {
       key= key*(-1);
