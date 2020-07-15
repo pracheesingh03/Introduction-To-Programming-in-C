@@ -31,7 +31,7 @@ int decrypt(FILE *f)
       key= key*(-1);
       key = 26- key;
     }
-  else key = key * (-1);
+  
   return key;
 }
 int main(int argc, char ** argv)
