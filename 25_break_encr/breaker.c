@@ -31,8 +31,9 @@ int decrypt(FILE *f)
       return EXIT_FAILURE;
     }
   int key;
-  
-  key= ans - 'e';
+  char e= 'e';
+  int ascii= (int)e;
+  key= ans - ascii;
   if(key<0)
     {
       key= key*(-1);
