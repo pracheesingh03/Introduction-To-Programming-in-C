@@ -16,9 +16,10 @@ int decrypt(FILE *f)
       if(isalpha(c))
 	{
 	  c = tolower(c);
-	  if(c==a) f1++;
+	  if(c==(int)a) f1++;
 	}
     }
+  
   if(finalf<f1)
     {
       finalf=f1;
