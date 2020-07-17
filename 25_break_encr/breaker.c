@@ -18,7 +18,7 @@ int decrypt(FILE *f)
       if(isalpha(c))
 	{
 	  c=tolower(c);
-	  arr[c-a]++;
+	  arr[c-'a']++;
 	}
     }
   int max=0;
