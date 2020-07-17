@@ -6,7 +6,7 @@ int decrypt(FILE *f)
 {
   int c;
   int f1;
-  int ans;
+  //int ans;
   //int finalf=0;
   int arr[26];
   for (int i=0; i<26; i++)
@@ -29,7 +29,8 @@ int decrypt(FILE *f)
 	max= arr[j];
 	f1=j;
     }
-      key= f1-4;//4 is the index of e
+    }
+     int key= f1-4;//4 is the index of e
   /*
   for(char a='a'; a<='z'; a++)
     {
