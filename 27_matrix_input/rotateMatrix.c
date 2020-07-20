@@ -1,5 +1,30 @@
 #include<stdio.h>
 #include<stdlib.h>
+int checkinput(FILE * f){
+  int c=0;
+  int col =0;
+  c=fgetc(f);
+  while (!(c == EOF)){
+    for(int i=0 ;i<10;i++){
+      if(c == '\n'){
+	fprintf(stderr,"char error");
+	return 0;
+      }
+      c=fgetc(f);
+    }
+    if (c != '\n'){
+      fprintf(stderr,"row err");
+      return 0;
+    }
+    c=fgetc(f);
+    col ++;
+  }
+  if(col == 10) return 1;
+  else {
+    fprintf(stderr,"column err");
+    return 0;}
+
+}
 
 void rotate(FILE *f)
 {
@@ -52,6 +77,7 @@ int main(int argc, char ** argv)
       return EXIT_FAILURE;
     }
 
+  if (!(checkinput(f))) return EXIT_FAILURE;
   rotate(f);
   if(fclose(f)!=0)
     {
