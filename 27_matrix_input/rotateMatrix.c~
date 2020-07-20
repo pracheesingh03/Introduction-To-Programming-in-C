@@ -1,0 +1,27 @@
+int main(int argc, char ** argv)
+{
+  if(argc !=2)
+    {
+      fprintf(stderr, "Usage: input File name");
+      return EXIT_FAILURE;
+    }
+  FILE *f = fopen(argv[1], "r");
+  if(f==NULL)
+    {
+      perror("could not open file");
+      return EXIT_FAILURE;
+    }
+  int key=  decrypt(f);
+  if(key>=26)
+    {
+      fprintf(stderr, "Invalid key");
+      return EXIT_FAILURE;
+    }
+  printf("%d", key);
+  if(fclose(f)!=0)
+    {
+      perror("Failed to close file");
+      return EXIT_FAILURE;
+    }
+  return EXIT_SUCCESS;
+}
