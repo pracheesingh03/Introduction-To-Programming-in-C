@@ -42,14 +42,8 @@ int main(int argc, char ** argv)
       perror("could not open file");
       return EXIT_FAILURE;
     }
-  char matrix[10][10];
-  for(int i=0; i<10; i++)
-    {
-      for (int j=0; j<10; j++)
-	{
-	  scanf("%c",&matrix[i][j]);
-	}
-    }
+
+  rotate(f);
   if(fclose(f)!=0)
     {
       perror("Failed to close file");
