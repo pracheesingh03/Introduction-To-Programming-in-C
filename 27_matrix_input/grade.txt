@@ -1,12 +1,21 @@
-Grading at Mon Jul 20 12:04:02 UTC 2020
+Grading at Mon Jul 20 12:09:57 UTC 2020
 Attempting to compile rotateMatrix.c
-rotateMatrix.c: In function ‘main’:
-rotateMatrix.c:46:10: error: passing argument 1 of ‘rotate’ from incompatible pointer type [-Werror=incompatible-pointer-types]
-   rotate(f);
-          ^
-rotateMatrix.c:4:6: note: expected ‘char (*)[10]’ but argument is of type ‘FILE * {aka struct _IO_FILE *}’
- void rotate(char matrix[10][10])
-      ^
+rotateMatrix.c: In function ‘rotate’:
+rotateMatrix.c:9:20: error: expected ‘,’ or ‘;’ before ‘i’
+       for(int i=0. i<10; i++){
+                    ^
+rotateMatrix.c:9:29: error: expected ‘;’ before ‘)’ token
+       for(int i=0. i<10; i++){
+                             ^
+rotateMatrix.c:40:1: error: ISO C forbids nested functions [-Werror=pedantic]
+ int main(int argc, char ** argv)
+ ^
+rotateMatrix.c:40:5: error: ‘main’ is normally a non-static function [-Werror=main]
+ int main(int argc, char ** argv)
+     ^
+rotateMatrix.c:61:1: error: expected declaration or statement at end of input
+ }
+ ^
 cc1: all warnings being treated as errors
 The code did not compile!
 
