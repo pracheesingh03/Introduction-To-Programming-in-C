@@ -6,11 +6,12 @@ void rotate(FILE *f)
   int c; char matrix[10][10];
   while((c= fgetc(f))!= EOF)
     {
-      for(int i=0. i<10; i++){
+      for(int i=0; i<10; i++){
 	for(int j=0; j<10; j++){
 	  matrix[i][j]=c;
 	}
-      }    
+      }
+    }
   char new[10][10];
   for(int i=0; i<10; i++)
     {
