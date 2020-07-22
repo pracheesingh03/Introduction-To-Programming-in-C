@@ -1,0 +1,13 @@
+Grading at Wed Jul 22 17:08:17 UTC 2020
+Attempting to compile:
+#################################################
+testcase1:
+valgrind reported memory errors
+#################################################
+testcase2:
+valgrind reported memory errors
+#################################################
+testcase3:
+valgrind reported memory errors
+
+Overall Grade: F
