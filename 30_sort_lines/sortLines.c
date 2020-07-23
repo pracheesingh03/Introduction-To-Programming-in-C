@@ -19,7 +19,11 @@ void sortData(char ** data, size_t count) {
 int main(int argc, char ** argv) {
   
   //WRITE YOUR CODE HERE!
-  if(argc==1)
+  if (argc == 0) {
+    fprintf(stderr,"few arguments \n");
+    return EXIT_FAILURE;
+  }
+  else if(argc==1)
     {
       char ** arr= NULL;
       char *line= NULL;
