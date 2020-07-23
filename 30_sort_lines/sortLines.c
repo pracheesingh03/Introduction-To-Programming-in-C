@@ -67,7 +67,7 @@ int main(int argc, char ** argv) {
 	  }
 	  free(line);
 	  sortData(arr, x);
-	  for(int j=0;j<i;j++){
+	  for(int j=0;j<x;j++){
 	    printf("%s",arr[j]);
 	    free(arr[j]);
 	  }
