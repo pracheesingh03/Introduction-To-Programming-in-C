@@ -1,35 +1,35 @@
-Grading at Thu Jul 23 11:40:14 UTC 2020
+Grading at Thu Jul 23 11:46:13 UTC 2020
 Attempting to compile sortLines.c
 #################################################
 testcase1:
 testcase1 passed, your program successfully indicated a failure
   - Valgrind reported errors
 valgrind was not clean
-==137== Memcheck, a memory error detector
-==137== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
-==137== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
-==137== 
-==137== Parent PID: 136
-==137== 
-==137== 
-==137== HEAP SUMMARY:
-==137==     in use at exit: 480 bytes in 4 blocks
-==137==   total heap usage: 17 allocs, 13 frees, 11,712 bytes allocated
-==137== 
-==137== 480 bytes in 4 blocks are definitely lost in loss record 1 of 1
-==137==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==137==    by 0x4EA89E7: getdelim (iogetdelim.c:62)
-==137==    by 0x400A97: main (in /graderhome/work/30_sort_lines/sortLines)
-==137== 
-==137== LEAK SUMMARY:
-==137==    definitely lost: 480 bytes in 4 blocks
-==137==    indirectly lost: 0 bytes in 0 blocks
-==137==      possibly lost: 0 bytes in 0 blocks
-==137==    still reachable: 0 bytes in 0 blocks
-==137==         suppressed: 0 bytes in 0 blocks
-==137== 
-==137== For counts of detected and suppressed errors, rerun with: -v
-==137== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+==328== Memcheck, a memory error detector
+==328== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==328== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==328== 
+==328== Parent PID: 327
+==328== 
+==328== 
+==328== HEAP SUMMARY:
+==328==     in use at exit: 480 bytes in 4 blocks
+==328==   total heap usage: 17 allocs, 13 frees, 11,712 bytes allocated
+==328== 
+==328== 480 bytes in 4 blocks are definitely lost in loss record 1 of 1
+==328==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==328==    by 0x4EA89E7: getdelim (iogetdelim.c:62)
+==328==    by 0x400B45: main (in /graderhome/work/30_sort_lines/sortLines)
+==328== 
+==328== LEAK SUMMARY:
+==328==    definitely lost: 480 bytes in 4 blocks
+==328==    indirectly lost: 0 bytes in 0 blocks
+==328==      possibly lost: 0 bytes in 0 blocks
+==328==    still reachable: 0 bytes in 0 blocks
+==328==         suppressed: 0 bytes in 0 blocks
+==328== 
+==328== For counts of detected and suppressed errors, rerun with: -v
+==328== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
 #################################################
 testcase2:
 Your output is correct
