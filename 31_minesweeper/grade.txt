@@ -1,10 +1,24 @@
-Grading at Mon Jul 27 18:52:15 UTC 2020
+Grading at Mon Jul 27 18:55:59 UTC 2020
 Attempting to compile minesweeper.c
-minesweeper.c: In function ‘countMines’:
-minesweeper.c:124:6: error: implicit declaration of function ‘checkvalid’ [-Werror=implicit-function-declaration]
-   if(checkvalid(x1,y1,w,h)){
-      ^
-cc1: all warnings being treated as errors
-The code did not compile!
+#################################################
+testcase1:
+Your output is correct
+  - Valgrind was clean (no errors, no memory leaks)
+valgrind was clean
+#################################################
+testcase2:
+Your output is correct
+  - Valgrind was clean (no errors, no memory leaks)
+valgrind was clean
+#################################################
+testcase3:
+Your output is correct
+  - Valgrind was clean (no errors, no memory leaks)
+valgrind was clean
+#################################################
+testcase4:
+Your output is correct
+  - Valgrind was clean (no errors, no memory leaks)
+valgrind was clean
 
-Overall Grade: F
+Overall Grade: A
