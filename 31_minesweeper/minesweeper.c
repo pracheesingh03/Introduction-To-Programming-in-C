@@ -110,6 +110,12 @@ void printBoard(board_t * b) {
   }
   printf("\nFound %d of %d mines\n", found, b->totalMines);
 }
+
+int checkvalid(int x ,int y ,int w,int h){
+  if (((x>=0)&&(x < w))&&((y >= 0)&&(y<h))) return 1;
+  else return 0;
+}
+
 int countMines(board_t * b, int x, int y) {
   //WRITE ME!
   int w=b->width;
