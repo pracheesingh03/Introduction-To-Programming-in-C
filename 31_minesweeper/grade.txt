@@ -1,0 +1,10 @@
+Grading at Mon Jul 27 18:52:15 UTC 2020
+Attempting to compile minesweeper.c
+minesweeper.c: In function ‘countMines’:
+minesweeper.c:124:6: error: implicit declaration of function ‘checkvalid’ [-Werror=implicit-function-declaration]
+   if(checkvalid(x1,y1,w,h)){
+      ^
+cc1: all warnings being treated as errors
+The code did not compile!
+
+Overall Grade: F
