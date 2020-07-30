@@ -1,0 +1,81 @@
+Grading at Thu Jul 30 19:31:48 UTC 2020
+Attempting to compile:
+#################################################
+testcase1:
+Your output is correct
+  - Valgrind reported errors
+valgrind was not clean
+==268== Memcheck, a memory error detector
+==268== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==268== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==268== 
+==268== Parent PID: 267
+==268== 
+==268== 
+==268== HEAP SUMMARY:
+==268==     in use at exit: 768 bytes in 7 blocks
+==268==   total heap usage: 23 allocs, 16 frees, 9,864 bytes allocated
+==268== 
+==268== 48 bytes in 1 blocks are definitely lost in loss record 1 of 2
+==268==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==268==    by 0x40099F: readKVs (in /graderhome/work/32_kvs/kv_test)
+==268==    by 0x400B9E: main (in /graderhome/work/32_kvs/kv_test)
+==268== 
+==268== 720 bytes in 6 blocks are definitely lost in loss record 2 of 2
+==268==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==268==    by 0x4EA89E7: getdelim (iogetdelim.c:62)
+==268==    by 0x4009F7: readKVs (in /graderhome/work/32_kvs/kv_test)
+==268==    by 0x400B9E: main (in /graderhome/work/32_kvs/kv_test)
+==268== 
+==268== LEAK SUMMARY:
+==268==    definitely lost: 768 bytes in 7 blocks
+==268==    indirectly lost: 0 bytes in 0 blocks
+==268==      possibly lost: 0 bytes in 0 blocks
+==268==    still reachable: 0 bytes in 0 blocks
+==268==         suppressed: 0 bytes in 0 blocks
+==268== 
+==268== For counts of detected and suppressed errors, rerun with: -v
+==268== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
+#################################################
+testcase2:
+Your output is correct
+  - Valgrind reported errors
+valgrind was not clean
+==285== Memcheck, a memory error detector
+==285== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==285== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==285== 
+==285== Parent PID: 284
+==285== 
+==285== 
+==285== HEAP SUMMARY:
+==285==     in use at exit: 768 bytes in 7 blocks
+==285==   total heap usage: 23 allocs, 16 frees, 9,864 bytes allocated
+==285== 
+==285== 48 bytes in 1 blocks are definitely lost in loss record 1 of 2
+==285==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==285==    by 0x40099F: readKVs (in /graderhome/work/32_kvs/kv_test)
+==285==    by 0x400B9E: main (in /graderhome/work/32_kvs/kv_test)
+==285== 
+==285== 720 bytes in 6 blocks are definitely lost in loss record 2 of 2
+==285==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==285==    by 0x4EA89E7: getdelim (iogetdelim.c:62)
+==285==    by 0x4009F7: readKVs (in /graderhome/work/32_kvs/kv_test)
+==285==    by 0x400B9E: main (in /graderhome/work/32_kvs/kv_test)
+==285== 
+==285== LEAK SUMMARY:
+==285==    definitely lost: 768 bytes in 7 blocks
+==285==    indirectly lost: 0 bytes in 0 blocks
+==285==      possibly lost: 0 bytes in 0 blocks
+==285==    still reachable: 0 bytes in 0 blocks
+==285==         suppressed: 0 bytes in 0 blocks
+==285== 
+==285== For counts of detected and suppressed errors, rerun with: -v
+==285== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
+#################################################
+testcase3:
+Your output is correct
+  - Valgrind was clean (no errors, no memory leaks)
+valgrind was clean
+
+Overall Grade: B
