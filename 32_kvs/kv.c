@@ -55,6 +55,7 @@ void freeKVs(kvarray_t * pairs) {
   for(int i=0; i<(*pairs).length; i++)
     {
       free(pairs -> arr[i] -> key);
+      free(pairs -> arr[i] -> value);
       free ((*pairs).arr[i]);
     }
   free((*pairs).arr);
