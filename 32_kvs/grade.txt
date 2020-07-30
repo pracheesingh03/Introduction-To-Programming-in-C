@@ -1,71 +1,19 @@
-Grading at Thu Jul 30 19:51:48 UTC 2020
+Grading at Thu Jul 30 19:55:01 UTC 2020
 Attempting to compile:
 #################################################
 testcase1:
 Your output is correct
-  - Valgrind reported errors
-valgrind was not clean
-==502== Memcheck, a memory error detector
-==502== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
-==502== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
-==502== 
-==502== Parent PID: 501
-==502== 
-==502== 
-==502== HEAP SUMMARY:
-==502==     in use at exit: 720 bytes in 6 blocks
-==502==   total heap usage: 23 allocs, 17 frees, 9,864 bytes allocated
-==502== 
-==502== 720 bytes in 6 blocks are definitely lost in loss record 1 of 1
-==502==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==502==    by 0x4EA89E7: getdelim (iogetdelim.c:62)
-==502==    by 0x4009F7: readKVs (in /graderhome/work/32_kvs/kv_test)
-==502==    by 0x400BAD: main (in /graderhome/work/32_kvs/kv_test)
-==502== 
-==502== LEAK SUMMARY:
-==502==    definitely lost: 720 bytes in 6 blocks
-==502==    indirectly lost: 0 bytes in 0 blocks
-==502==      possibly lost: 0 bytes in 0 blocks
-==502==    still reachable: 0 bytes in 0 blocks
-==502==         suppressed: 0 bytes in 0 blocks
-==502== 
-==502== For counts of detected and suppressed errors, rerun with: -v
-==502== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+  - Valgrind was clean (no errors, no memory leaks)
+valgrind was clean
 #################################################
 testcase2:
 Your output is correct
-  - Valgrind reported errors
-valgrind was not clean
-==519== Memcheck, a memory error detector
-==519== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
-==519== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
-==519== 
-==519== Parent PID: 518
-==519== 
-==519== 
-==519== HEAP SUMMARY:
-==519==     in use at exit: 720 bytes in 6 blocks
-==519==   total heap usage: 23 allocs, 17 frees, 9,864 bytes allocated
-==519== 
-==519== 720 bytes in 6 blocks are definitely lost in loss record 1 of 1
-==519==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==519==    by 0x4EA89E7: getdelim (iogetdelim.c:62)
-==519==    by 0x4009F7: readKVs (in /graderhome/work/32_kvs/kv_test)
-==519==    by 0x400BAD: main (in /graderhome/work/32_kvs/kv_test)
-==519== 
-==519== LEAK SUMMARY:
-==519==    definitely lost: 720 bytes in 6 blocks
-==519==    indirectly lost: 0 bytes in 0 blocks
-==519==      possibly lost: 0 bytes in 0 blocks
-==519==    still reachable: 0 bytes in 0 blocks
-==519==         suppressed: 0 bytes in 0 blocks
-==519== 
-==519== For counts of detected and suppressed errors, rerun with: -v
-==519== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+  - Valgrind was clean (no errors, no memory leaks)
+valgrind was clean
 #################################################
 testcase3:
 Your output is correct
   - Valgrind was clean (no errors, no memory leaks)
 valgrind was clean
 
-Overall Grade: B
+Overall Grade: A
