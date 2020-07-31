@@ -1,9 +1,19 @@
-Grading at Fri Jul 31 08:08:11 UTC 2020
+Grading at Fri Jul 31 08:09:05 UTC 2020
 Attempting to compile:
-kv.c: In function ‘freeKVs’:
-kv.c:59:25: error: request for member ‘key’ in something not a structure or union
-       free(pairs -> arr -> key);
-                         ^
-The code did not compile!
+#################################################
+testcase1:
+Your output is correct
+  - Valgrind was clean (no errors, no memory leaks)
+valgrind was clean
+#################################################
+testcase2:
+Your output is correct
+  - Valgrind was clean (no errors, no memory leaks)
+valgrind was clean
+#################################################
+testcase3:
+Your output is correct
+  - Valgrind was clean (no errors, no memory leaks)
+valgrind was clean
 
-Overall Grade: F
+Overall Grade: A
