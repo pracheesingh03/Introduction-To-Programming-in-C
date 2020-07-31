@@ -1,7 +1,7 @@
-Grading at Fri Jul 31 08:06:55 UTC 2020
+Grading at Fri Jul 31 08:08:11 UTC 2020
 Attempting to compile:
 kv.c: In function ‘freeKVs’:
-kv.c:58:25: error: request for member ‘key’ in something not a structure or union
+kv.c:59:25: error: request for member ‘key’ in something not a structure or union
        free(pairs -> arr -> key);
                          ^
 The code did not compile!
