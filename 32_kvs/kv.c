@@ -39,8 +39,9 @@ kvarray_t * readKVs(const char * fname) {
       (*array).arr[(*array).length] = pair;
       line = NULL;
       (*array).length++;
-      free(line);
+     
     }
+  free(line);
 
 
   if(fclose(f)!=0)
