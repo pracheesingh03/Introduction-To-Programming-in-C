@@ -39,8 +39,9 @@ kvarray_t * readKVs(const char * fname) {
       (*array).arr[(*array).length] = pair;
       line = NULL;
       (*array).length++;
+      free(line);
     }
-  free(line);
+
 
   if(fclose(f)!=0)
     {
@@ -54,8 +55,7 @@ void freeKVs(kvarray_t * pairs) {
   //WRITE ME
   for(int i=0; i<(*pairs).length; i++)
     {
-      free(pairs -> arr[i] -> key);
-      free(pairs -> arr[i] -> value);
+   
       free ((*pairs).arr[i]);
     }
   free((*pairs).arr);
