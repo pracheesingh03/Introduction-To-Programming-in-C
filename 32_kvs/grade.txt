@@ -1,41 +1,19 @@
-Grading at Fri Jul 31 08:24:45 UTC 2020
+Grading at Fri Jul 31 08:25:58 UTC 2020
 Attempting to compile:
 #################################################
 testcase1:
-valgrind reported memory errors
+Your output is correct
+  - Valgrind was clean (no errors, no memory leaks)
+valgrind was clean
 #################################################
 testcase2:
-valgrind reported memory errors
+Your output is correct
+  - Valgrind was clean (no errors, no memory leaks)
+valgrind was clean
 #################################################
 testcase3:
 Your output is correct
-  - Valgrind reported errors
-valgrind was not clean
-==962== Memcheck, a memory error detector
-==962== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
-==962== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
-==962== 
-==962== Parent PID: 961
-==962== 
-==962== 
-==962== HEAP SUMMARY:
-==962==     in use at exit: 120 bytes in 1 blocks
-==962==   total heap usage: 5 allocs, 4 frees, 8,880 bytes allocated
-==962== 
-==962== 120 bytes in 1 blocks are definitely lost in loss record 1 of 1
-==962==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==962==    by 0x4EA89E7: getdelim (iogetdelim.c:62)
-==962==    by 0x400A06: readKVs (in /graderhome/work/32_kvs/kv_test)
-==962==    by 0x400BB0: main (in /graderhome/work/32_kvs/kv_test)
-==962== 
-==962== LEAK SUMMARY:
-==962==    definitely lost: 120 bytes in 1 blocks
-==962==    indirectly lost: 0 bytes in 0 blocks
-==962==      possibly lost: 0 bytes in 0 blocks
-==962==    still reachable: 0 bytes in 0 blocks
-==962==         suppressed: 0 bytes in 0 blocks
-==962== 
-==962== For counts of detected and suppressed errors, rerun with: -v
-==962== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+  - Valgrind was clean (no errors, no memory leaks)
+valgrind was clean
 
-Overall Grade: F
+Overall Grade: A
