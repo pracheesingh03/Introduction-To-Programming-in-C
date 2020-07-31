@@ -37,11 +37,12 @@ kvarray_t * readKVs(const char * fname) {
       pair= split(line);
       (*array).arr= realloc((*array).arr,((*array).length+1) * sizeof((*array).arr));
       (*array).arr[(*array).length] = pair;
+      free(line);
       line = NULL;
       (*array).length++;
      
     }
-  free(line);
+
 
 
   if(fclose(f)!=0)
