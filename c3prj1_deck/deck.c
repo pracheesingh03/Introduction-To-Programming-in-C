@@ -67,7 +67,10 @@ void add_card_to(deck_t * deck, card_t c){
   deck ->cards[deck ->n_cards]=c1;
 
   deck ->n_cards ++;
+
 }
+
+
 
 card_t * add_empty_card(deck_t * deck){
 
@@ -86,6 +89,10 @@ card_t * add_empty_card(deck_t * deck){
   return c1;
 
 }
+
+
+
+
 
 deck_t * make_deck_exclude(deck_t * excluded_cards){
 
@@ -138,6 +145,8 @@ deck_t * build_remaining_deck(deck_t ** hands, size_t n_hands) {
   return deck2 ;
 
 }
+
+
 
 void free_deck(deck_t * deck) {
 
