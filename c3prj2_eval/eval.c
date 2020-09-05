@@ -3,6 +3,11 @@
 #include <stdlib.h>
 #include <assert.h>
 
+int com1(card_t c1,card_t c2){
+  if (c1.value == c2.value) return 1;
+  return 0;
+}
+
 int card_ptr_comp(const void * vp1, const void * vp2) {
   const card_t * const * cp1=vp1;
   const card_t * const * cp2=vp2;
