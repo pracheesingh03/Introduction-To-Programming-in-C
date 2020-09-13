@@ -1,13 +1,13 @@
-Grading at Sun Sep 13 18:56:49 UTC 2020
+Grading at Sun Sep 13 18:59:02 UTC 2020
 Running 'make clean' to do a clean build of your project
 rm -rf *.o poker *~
 Running 'make poker OTHERFLAGS=-O3' to build your project
-gcc -Wall -Werror -ggdb3 -std=gnu99 -pedantic -O3   -c -o cards.o cards.c
-gcc -Wall -Werror -ggdb3 -std=gnu99 -pedantic -O3   -c -o deck.o deck.c
-gcc -Wall -Werror -ggdb3 -std=gnu99 -pedantic -O3   -c -o eval.o eval.c
-gcc -Wall -Werror -ggdb3 -std=gnu99 -pedantic -O3   -c -o future.o future.c
-gcc -Wall -Werror -ggdb3 -std=gnu99 -pedantic -O3   -c -o input.o input.c
-gcc -Wall -Werror -ggdb3 -std=gnu99 -pedantic -O3   -c -o main.o main.c
+gcc -Wall -Werror -ggdb3 -std=gnu99 -pedantic -O3 -c cards.c
+gcc -Wall -Werror -ggdb3 -std=gnu99 -pedantic -O3 -c deck.c
+gcc -Wall -Werror -ggdb3 -std=gnu99 -pedantic -O3 -c eval.c
+gcc -Wall -Werror -ggdb3 -std=gnu99 -pedantic -O3 -c future.c
+gcc -Wall -Werror -ggdb3 -std=gnu99 -pedantic -O3 -c input.c
+gcc -Wall -Werror -ggdb3 -std=gnu99 -pedantic -O3 -c main.c
 gcc -o poker -Wall -Werror -ggdb3 -std=gnu99 -pedantic -O3 cards.o deck.o eval.o future.o input.o main.o
  - Starting with some Texas Hold'em hands
 Running a simulation with 20000 draws for 2 hands...
