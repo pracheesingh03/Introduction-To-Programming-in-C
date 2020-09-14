@@ -1,4 +1,4 @@
-Grading at Sun Sep 13 18:59:02 UTC 2020
+Grading at Mon Sep 14 18:28:44 UTC 2020
 Running 'make clean' to do a clean build of your project
 rm -rf *.o poker *~
 Running 'make poker OTHERFLAGS=-O3' to build your project
