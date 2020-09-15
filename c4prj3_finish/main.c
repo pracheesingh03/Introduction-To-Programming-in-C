@@ -112,7 +112,7 @@ int main(int argc, char ** argv) {
   }
 
   FILE * f = fopen(argv[1],"r");
-  if (NULL == f) {
+  if (f==NULL) {
     perror("Cannot open file");
     return EXIT_FAILURE;
   }
